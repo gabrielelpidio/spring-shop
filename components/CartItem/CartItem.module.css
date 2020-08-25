@@ -1,0 +1,44 @@
+.wrapper {
+  column-gap: 2rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(30%, 6rem) auto;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.productImg {
+  width: 100%;
+}
+
+.itemDetail {
+  display: grid;
+  grid-template-rows: 60% 40%;
+  grid-template-columns: 25% 60% 15%;
+  grid-template-areas:
+    'quantity name delete'
+    'quantity price delete';
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity {
+  grid-area: quantity;
+}
+.name {
+  grid-area: name;
+  margin: 0;
+}
+.price {
+  grid-area: price;
+}
+
+.delete {
+  grid-area: delete;
+}

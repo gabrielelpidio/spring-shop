@@ -1,0 +1,36 @@
+.layout {
+  height: 100vh;
+  display: grid;
+  overflow: hidden;
+  grid-template-rows: 100%;
+  background-color: white;
+}
+
+.backdrop {
+  position: fixed;
+  transform-origin: top;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+.button {
+  width: 4rem;
+  height: 4rem;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 3;
+  position: fixed;
+  background: #d81159;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  width: 100px;
+  height: 100px;
+}
