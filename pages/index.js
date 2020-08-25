@@ -27,7 +27,6 @@ export default function Home() {
       y: 0,
       onRest: () => {
         setOpen(findNearestNumberInArray(y.get(), stops) === stops[1]);
-        console.log(stops);
       },
       config: {
         tension: 247,
